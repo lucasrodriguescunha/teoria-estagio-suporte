@@ -2,11 +2,21 @@
   margin: 0;
   padding: 0;
 }
+
+body {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
 section {
+  width: 700px;
   background-color: darkcyan;
-  margin: 20px;
-  border-radius: 4px;
-  border: 1px solid gray;
+  border-radius: 2px;
+  padding: 20px;
+  text-align: center; /* Adicionando para alinhar o conteúdo ao centro */
+  margin-bottom: 5px;
+  margin-top: 5px;
 }
 
 h1 {
@@ -23,13 +33,23 @@ h3 {
 
 img {
   width: 400px;
+  border-radius: 2px;
+  display: block; /* Para centralizar a imagem */
+  margin: 0 auto; /* Para centralizar a imagem */
 }
 
 p {
   background-color: #d9d9d9;
   margin: 10px;
+  padding: 10px;
 }
 
 li {
   list-style: none;
+}
+
+@media (max-width: 650px) {
+  section {
+    width: auto;
+  }
 }
